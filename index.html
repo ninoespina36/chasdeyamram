@@ -11,10 +11,10 @@
 <body>
     <header class="navbar fixed w-full left-0 top-0 z-10">
         <div class="flex lg:justify-start justify-between items-center p-4">
-            <a href="#" class="w-48 mr-10">
+            <a href="#" class="w-48 mr-20">
                 <img src="./images/logo.png" alt="logo">
             </a>
-            <ul class="lg:flex lg:space-x-2 lg:static lg:h-auto lg:w-auto lg:px-0 lg:translate-x-0 fixed bg-primary top-0 left-0 w-full h-screen px-5 transform -translate-x-full duration-200" id="menu">
+            <ul class="lg:flex lg:space-x-4 lg:static lg:h-auto lg:w-auto lg:px-0 lg:translate-x-0 fixed bg-primary top-0 left-0 w-full h-screen px-5 transform -translate-x-full duration-200" id="menu">
                 <li class="text-right lg:hidden block"><button class="text-white w-20 ml-auto p-3" onclick="toggleMenu()">Close</button></li>
                 <li><a href="#about" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">About Us</a></li>
                 <li><a href="#services" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">Services</a></li>
@@ -132,7 +132,7 @@
             <p>To date, Chasdei Amram has saved the lives of tens of thousands (!) of people,  irrespective of their race, religion or gender.</p>
         </div>
     </section>
-    <section style="background-image: url('./images/background_3.png');" class="min-h-screen lg:p-20 p-10 bg-cover section" id="services">
+    <section style="background-image: url('./images/background_3.png');" class="lg:p-20 p-10 bg-cover section" id="services">
         <h1 class="sm:text-5xl text-2xl mb-20 block text-center text-white">What We Provide?</h1>
         <div class="grid grid-cols-12 lg:space-x-10">
             <div class="col-span-12 lg:col-span-4 pb-20 lg:pb-0">
@@ -179,25 +179,29 @@
             </div>
         </div>
     </section>
-    <section id="locations" class="section lg:p-20 p-10 text-center overflow-hidden">
-        <h1 class="uppercase font-medium sm:text-5xl text-2xl mb-10">Locations</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo. Labore itaque soluta sed voluptas? Repellendus, vero autem eligendi tempora voluptatibus accusantium laudantium cum quod architecto in quasi veritatis distinctio!</p>
-        <div class="relative mx-auto mt-10 max-w-4xl">
-            <img src="./images/connect.png" alt="Connect" class="w-full h-full hidden lg:block">
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-20 top-20 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">Jerusalem</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-6 top-40 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">Ashod</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -left-24 top-56 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">BEITAR ILLIT</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -left-52 bottom-48  text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">BEIT SHEMESH</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -left-40 bottom-28  lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">MODIIN-BRACHFED</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-8 bottom-12  lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">ELAD</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-24 bottom-0  lg:translate-y-4 lg:translate-x-3 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">TZEFAS</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-32 top-20 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">HAIFA</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-2 top-40 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">GIVAT ZEV</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -right-20 top-56 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">BNEI BRAK</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -right-44 bottom-48 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">NETANYA</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -right-20 bottom-28 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">RECHOVOT</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-0 bottom-12 lg:-translate-y-2 lg:-translate-x-3 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">OFAKIM</div>
-            <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-24 -bottom-5 lg:-translate-y-2 lg:-translate-x-3 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">OFAKIM</div>
+    <section id="locations" class="text-center section">
+        <div class="lg:px-20 px-10 lg:pt-20 pt-10">
+            <h1 class="uppercase font-medium sm:text-5xl text-2xl mb-10">Locations</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo. Labore itaque soluta sed voluptas? Repellendus, vero autem eligendi tempora voluptatibus accusantium laudantium cum quod architecto in quasi veritatis distinctio!</p>
+        </div>
+        <div class="w-full lg:pb-20 pb-10 overflow-x-auto lg:px-0 px-10">
+            <div class="relative mx-auto mt-10 max-w-4xl">
+                <img src="./images/connect.png" alt="Connect" class="w-full h-full hidden lg:block">
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-20 top-20 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">Jerusalem</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-6 top-40 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">Ashod</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -left-24 top-56 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">BEITAR ILLIT</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -left-52 bottom-48  text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">BEIT SHEMESH</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -left-40 bottom-28  lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">MODIIN-BRACHFED</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-8 bottom-12  lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">ELAD</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary left-24 bottom-0  lg:translate-y-4 lg:translate-x-3 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">TZEFAS</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-32 top-20 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">HAIFA</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-2 top-40 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">GIVAT ZEV</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -right-20 top-56 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">BNEI BRAK</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -right-44 bottom-48 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">NETANYA</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary -right-20 bottom-28 lg:-translate-y-2 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">RECHOVOT</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-0 bottom-12 lg:-translate-y-2 lg:-translate-x-3 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">OFAKIM</div>
+                <div class="mb-2 lg:mb-0 lg:absolute static py-3 px-10 bg-tertiary right-24 -bottom-5 lg:-translate-y-2 lg:-translate-x-3 text-white font-medium rounded transform uppercase text-sm flex justify-center location transition duration-200 hover:bg-white">OFAKIM</div>
+            </div>
         </div>
     </section>
     <section style="background-image: url('./images/background_4.png');" class="lg:p-20 p-10 bg-cover section" id="news">
@@ -313,22 +317,22 @@
                 </div>
                 <div class="grid grid-cols-12 mt-10">
                     <div class="sm:col-span-6 col-span-12 p-2">
-                        <input type="text" placeholder="First Name" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                        <input type="text" placeholder="First Name" class="bg-transparent p-2 border-2 border-white w-full block outline-none text-white">
                     </div>
                     <div class="sm:col-span-6 col-span-12 p-2">
-                        <input type="text" placeholder="Last Name" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                        <input type="text" placeholder="Last Name" class="bg-transparent p-2 border-2 border-white w-full block outline-none text-white">
                     </div>
                     <div class="sm:col-span-6 col-span-12 p-2">
-                        <input type="email" placeholder="Email" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                        <input type="email" placeholder="Email" class="bg-transparent p-2 border-2 border-white w-full block outline-none text-white">
                     </div>
                     <div class="sm:col-span-6 col-span-12 p-2">
-                        <input type="text" placeholder="Phone" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                        <input type="text" placeholder="Phone" class="bg-transparent p-2 border-2 border-white w-full block outline-none text-white">
                     </div>
                     <div class="col-span-12 p-2">
-                        <input type="text" placeholder="Subject" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                        <input type="text" placeholder="Subject" class="bg-transparent p-2 border-2 border-white w-full block outline-none text-white">
                     </div>
                     <div class="col-span-12 p-2">
-                        <textarea class="bg-transparent p-2 border-2 border-white w-full block outline-none" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea class="bg-transparent p-2 border-2 border-white w-full block outline-none text-white" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     </div>
                     <div class="col-span-12 p-2">
                         <button class="p-3 w-60 bg-green-500 text-white mx-auto block rounded hover:bg-green-600 text-lg">Submit</button>
