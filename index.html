@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="navbar fixed w-full left-0 top-0 z-50">
+    <header class="navbar fixed w-full left-0 top-0 z-10">
         <div class="flex justify-between items-center p-4">
             <a href="#" class="w-48">
                 <img src="./images/logo.png" alt="logo">
@@ -143,9 +143,9 @@
                     <div class="bg-blue-100 h-full text-center sm:p-10 p-5">
                         <h1 class="sm:text-3xl text-lg uppercase font-medium mb-3 tracking-wide">Care</h1>
                         <div class="text-sm">
-                            <p>Chasdei Amram works together with experienced doctors and nurses who make frequent home visits to patients and work to achieve as rapid a recovery as possible. The doctors treat the medical issues while nurses take blood tests. These tests are taken to professional laboratories, which work in cooperation with Chasdei Amram.</p>
+                            <p>Chasdei Amram works together with experienced doctors and nurses who make frequent home visits to patients and work to achieve as rapid a recovery as possible...</p>
                         </div>
-                        <a href="#" class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm">Read More</a>
+                        <button class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm" onclick="openModal('care', true)">Read More</button>
                     </div>
                 </div>
             </div>
@@ -157,14 +157,9 @@
                     <div class="bg-blue-100 h-full text-center sm:p-10 p-5">
                         <h1 class="sm:text-3xl text-lg uppercase font-medium mb-3 tracking-wide">Equipment</h1>
                         <div class="text-sm">
-                            <p>Advanced Medical Equipment: Within a few months, Chasdei Amram became a major provider of medical equipment. The organization went into debt and purchased (and continues to purchase) advanced medical equipment that helps save lives.<span id="equipmentDots">...</span><span onclick="readMore('equipment')" class="cursor-pointer font-bold" id="equipmentMoreBtn">Read More</span>
-                            </p>
-                            <span id="equipmentMore">
-                                <p>Medical equipment required by a corona patient and which the organization provides, includes: Oximeters (to measure saturation) | Blood pressure gauges | Advanced nebulizers | Oxygen concentrators to different levels | Oxygen tanks | Aicare breathing support machine | E.K.G. machines | Monitors | Advanced device to measure CO2 | </p>
-                                <p>These devices have saved the lives of tens of thousands of patients - and continue to do so round the clock.</p><span onclick="readLess('equipment')" class="cursor-pointer font-bold" id="equipmentLessBtn">Read Less</span>
-                            </span>
+                            <p>Advanced Medical Equipment: Within a few months, Chasdei Amram became a major provider of medical equipment. The organization went into debt...
                         </div>
-                        <a href="#" class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm">Read More</a>
+                        <button class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm" onclick="openModal('equipment', true)">Read More</button>
                     </div>
                 </div>
             </div>
@@ -176,14 +171,9 @@
                     <div class="bg-blue-100 h-full text-center sm:p-10 p-5">
                         <h1 class="sm:text-3xl text-lg uppercase font-medium mb-3 tracking-wide">Assistance</h1>
                         <div class="text-sm">
-                            <p>Living lives by a Phone: A large part of Chasdei Amram's activities involve a telephone hotline for medical advice. Thousands of people call the hotline and receive medical guidance with regard to their course of treatment for coronavirus.<span id="assistanceDots">...</span><span onclick="readMore('assistance')" class="cursor-pointer font-bold" id="assistanceMoreBtn">Read More</span></p>
-                            <span id="assistanceMore">
-                                <p> The network has saved lives because they were readily available, with linger on the pulse, and knew at any given moment that the situation was, and what needed to be done is prevent deterioration.</p>
-                                <p>Active Teams: The office is staffed by teams throughout the day and night, all week. The staff answers all calls and works swiftly to get help and medicines to anyone who asks.</p>
-                                <p>There is also a fleet of Chasdei Amram vehicles that travels around the country, transporting all the medical equipment. Chasdei Amram visits the homes of the patients to measure saturation and to provide any other urgent assistance. Every member - whether a staffer or a volunteer - is equipped with a case of supplies and equipment worth more than NIS 3,000, which includes an oximeter and blood pressure gauge.</p><span onclick="readLess('assistance')" class="cursor-pointer font-bold" id="assistanceLessBtn">Read Less</span>
-                            </span>
+                            <p>Living lives by a Phone: A large part of Chasdei Amram's activities involve a telephone hotline for medical advice. Thousands of people call the hotline and receive medical guidance...
                         </div>
-                        <a href="#" class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm">Read More</a>
+                        <button class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm" onclick="openModal('assistance', true)">Read More</button>
                     </div>
                 </div>
             </div>
@@ -225,7 +215,7 @@
                                 <p class="my-3">September 3, 2021</p>
                                 <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo voluptatibus ducimus tempora natus iure voluptatem harum doloremque quibusdam quos expedita, eaque odio eum sint ipsum perspiciatis officia quae id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio quas eius dolorum veniam, iusto ea quia natus recusandae provident sequi. Nobis vero optio numquam ab ut sed, dignissimos tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iste! Consequatur dolore, adipisci eos omnis, ab vel est quisquam saepe dignissimos fugit, quidem minus magnam voluptas quia voluptate laborum reprehenderit?</p>
                                 <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo voluptatibus ducimus tempora natus iure voluptatem harum doloremque quibusdam quos expedita, eaque odio eum sint ipsum perspiciatis officia quae id.</p>
-                                <a href="#" class="text-sm p-2 bg-blue-700 mt-5 block w-28 text-center rounded hover:bg-blue-800">Read More</a>
+                                <button class="text-sm p-2 bg-blue-700 mt-5 block w-28 text-center rounded hover:bg-blue-800" onclick="openModal('news', true)">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -350,6 +340,146 @@
     <div class="bg-primary text-center">
         <p class="text-xs text-white py-3">Copyright © 2021 Chasdey Yamram. All rights reserved.</p>
     </div>
+
+    <div class="fixed z-20 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="careModal">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
+                        <svg class="h-6 w-6 text-blue-700" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                            CARE
+                        </h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500">
+                                Chasdei Amram works together with experienced doctors and nurses who make frequent home visits to patients and work to achieve as rapid a recovery as possible. The doctors treat the medical issues while nurses take blood tests. These tests are taken to professional laboratories, which work in cooperation with Chasdei Amram.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button onclick="openModal('care', false)" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed z-20 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="equipmentModal">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
+                        <svg class="h-6 w-6 text-blue-700" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                            EQUIPMENT
+                        </h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500 mb-2">
+                                Advanced Medical Equipment: Within a few months, Chasdei Amram became a major provider of medical equipment. The organization went into debt and purchased (and continues to purchase) advanced medical equipment that helps save lives.
+                            </p>
+                            <p class="text-sm text-gray-500 mb-2">
+                                Medical equipment required by a corona patient and which the organization provides, includes: Oximeters (to measure saturation) | Blood pressure gauges | Advanced nebulizers | Oxygen concentrators to different levels | Oxygen tanks | Aicare breathing support machine | E.K.G. machines | Monitors | Advanced device to measure CO2 | 
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                These devices have saved the lives of tens of thousands of patients - and continue to do so round the clock.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button onclick="openModal('equipment', false)" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed z-20 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="assistanceModal">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
+                        <svg class="h-6 w-6 text-blue-700" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                            ASSISTANCE
+                        </h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500 mb-2">
+                                Living lives by a Phone: A large part of Chasdei Amram's activities involve a telephone hotline for medical advice. Thousands of people call the hotline and receive medical guidance with regard to their course of treatment for coronavirus. The network has saved lives because they were readily available, with linger on the pulse, and knew at any given moment that the situation was, and what needed to be done is prevent deterioration.
+                            </p>
+                            <p class="text-sm text-gray-500 mb-2">
+                                Active Teams: The office is staffed by teams throughout the day and night, all week. The staff answers all calls and works swiftly to get help and medicines to anyone who asks.
+
+                            </p>
+                            <p class="text-sm text-gray-500">
+                                There is also a fleet of Chasdei Amram vehicles that travels around the country, transporting all the medical equipment. Chasdei Amram visits the homes of the patients to measure saturation and to provide any other urgent assistance. Every member - whether a staffer or a volunteer - is equipped with a case of supplies and equipment worth more than NIS 3,000, which includes an oximeter and blood pressure gauge.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button onclick="openModal('assistance', false)" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed z-20 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true" id="newsModal">
+        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                        NEWS 1
+                    </h3>
+                    <div class="mt-2">
+                        <p class="text-sm text-gray-500 mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit placeat mollitia ea voluptas nesciunt eveniet perferendis modi expedita rem esse cum architecto doloribus iusto soluta consequuntur aperiam ratione, vel accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt minima beatae qui at animi provident porro exercitationem obcaecati sed eligendi quaerat facilis rem, iure nisi hic! Sit, neque eaque.
+                        </p>
+                        <p class="text-sm text-gray-500 mb-2">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel alias reiciendis dolorum earum omnis consectetur repellat. Nemo ipsum pariatur sed reprehenderit! Ad asperiores, exercitationem quia autem cumque excepturi voluptatibus. Incidunt.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button onclick="openModal('news', false)" type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
         const readMore = id =>{
@@ -376,6 +506,9 @@
     </script>
     <script>
         const menuActive = false;
+        const careActive = false;
+        const equipmentActive = false;
+        const assistanceActive = false;
 
         const swiper = new Swiper('.swiper', {
             loop: true,
@@ -395,6 +528,18 @@
             else{
                 menu.classList.remove('translate-x-0');
                 menu.classList.add('-translate-x-full');
+            }
+        }
+
+        const openModal = (modal, bool) =>{
+            this[`${modal}Active`] = bool;
+            const serviceModal = document.querySelector(`#${modal}Modal`);
+            if(this[`${modal}Active`]){
+                serviceModal.classList.remove('hidden');
+                serviceModal.classList.add('visible');
+            }else{
+                serviceModal.classList.add('hidden');
+                serviceModal.classList.remove('visible');
             }
         }
     </script>
