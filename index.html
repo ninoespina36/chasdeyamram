@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>חסדי עמרם</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="navbar fixed w-full left-0 top-0 z-50">
+        <div class="flex justify-between items-center p-4">
+            <a href="#" class="w-48">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <ul class="lg:flex lg:space-x-2 lg:static lg:h-auto lg:w-auto lg:px-0 lg:translate-x-0 fixed bg-primary top-0 left-0 w-full h-screen px-5 transform -translate-x-full duration-200" id="menu">
+                <li class="text-right lg:hidden block"><button class="text-white w-20 ml-auto p-3" onclick="toggleMenu()">Close</button></li>
+                <li><a href="#about" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">About Us</a></li>
+                <li><a href="#services" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#locations" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">Locations</a></li>
+                <li><a href="#news" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">News and Updates</a></li>
+                <li><a href="#testimonials" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">Testimonials</a></li>
+                <li><a href="#contact" class="text-white text-sm py-2 px-3 hover:text-red-700 hover:border-red-700 w-full block text-center" onclick="toggleMenu()">Contact Us</a></li>
+                <li><a href="#donate" class="text-white text-sm py-2 px-3 hover:border-red-700 w-full block text-center bg-secondary rounded-lg hover:text-white hover:border-0 hover:bg-red-900" onclick="toggleMenu()">Donate</a></li>
+            </ul>
+            <div>
+                <button class="lg:hidden inline" onclick="toggleMenu()">
+                    <div class="menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="w-full h-screen overflow-hidden bg-cover flex items-center justify-center" style="background-image: url('./images/background_1.png');">
+        <div class="mt-20">
+            <h1 class="text-white text-4xl text-center block">Fighting coronavirus. Saving Lives</h1>
+            <div class="flex items-center justify-center space-x-10 mt-20">
+                <a href="#donate" class="bg-primary text-white py-2 px-5 rounded-lg hover:bg-blue-900">Donate Now</a>
+                <a href="#contact" class="bg-secondary text-white py-2 px-5 rounded-lg hover:bg-red-900">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-cover" style="background-image: url('./images/background_2.png');">
+        <div class="py-4 px-4 grid grid-cols-12">
+            <div class="text-center text-white col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-2 p-4">
+                <div class="bg-red-400 bg-opacity-50 w-40 h-40 flex items-center justify-center rounded-full mx-auto relative">
+                    <div class="flex items-center justify-center">
+                        <img src="./images/icons/user.png" alt="Staff" class="w-20 mb-5">
+                        <h1 class="font-medium text-2xl absolute bottom-4">25</h1>
+                    </div>
+                </div>
+                <h1 class="font-medium my-4 text-lg">Staff</h1>
+                <p class="text-sm text-center">
+                    Chasdei Amram has a staff of 25 people in its offices, whose job is to handle the never-ending stream of calls<span id="staffDots">...</span><span onclick="readMore('staff')" class="cursor-pointer font-bold" id="staffMoreBtn">Read More</span> <span id="staffMore">and requests. They direct each request to the person who can deal with it in the fastest way possible. Chasdei Amram operators are trained to understand that the difference of a few minutes is sometimes worth an entire life. <span onclick="readLess('staff')" class="cursor-pointer font-bold" id="staffLessBtn">Read Less</span></span>
+                </p>
+            </div>
+           <div class="text-center text-white col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-2 p-4">
+                <div class="bg-red-400 bg-opacity-50 w-40 h-40 flex items-center justify-center rounded-full mx-auto relative">
+                    <div class="flex items-center justify-center">
+                        <img src="./images/icons/car.png" alt="Vehicles" class="w-14 mb-4">
+                        <h1 class="font-medium mt-4 text-2xl absolute bottom-4">10</h1>
+                    </div>
+                </div>
+                <h1 class="font-medium my-4 text-lg">Vehicles</h1>
+                <p class="text-sm text-center">Chasdei Amram operates 10 vehicles round the clock. The cars travel from house to house, providing the emergency medical services.</p>
+            </div>
+             <div class="text-center text-white col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-2 p-4">
+                <div class="bg-red-400 bg-opacity-50 w-40 h-40 flex items-center justify-center rounded-full mx-auto relative">
+                    <div class="flex items-center justify-center">
+                        <img src="./images/icons/o2.png" alt="Staff" class="w-12 mb-5">
+                        <h1 class="font-medium mt-4 text-2xl absolute bottom-4">700</h1>
+                    </div>
+                </div>
+                <h1 class="font-medium my-4 text-lg">Oxygen</h1>
+                <p class="text-sm text-center">
+                    More than 700 oxygen concentrators have been purchased by the organization since its inception<span id="oxygenDots">...</span> <span onclick="readMore('oxygen')" class="cursor-pointer font-bold" id="oxygenMoreBtn">Read More</span> <span id="oxygenMore">, and each week, more are purchased in an effort to save as many people as possible. <span onclick="readLess('oxygen')" class="cursor-pointer font-bold" id="oxygenLessBtn">Read Less</span></span>
+                </p>
+            </div>
+            <div class="text-center text-white col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-2 p-4">
+                <div class="bg-red-400 bg-opacity-50 w-40 h-40 flex items-center justify-center rounded-full mx-auto relative">
+                    <div class="flex items-center justify-center">
+                        <img src="./images/icons/location.png" alt="Staff" class="w-8 mb-4">
+                        <h1 class="font-medium mt-4 text-2xl  absolute bottom-4">15</h1>
+                    </div>
+                </div>
+                <h1 class="font-medium my-4 text-lg">Location</h1>
+                <p class="text-sm text-center">Fifteen active Chasdei Amram locations around the country</p>
+            </div>
+            <div class="text-center text-white col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-2 p-4">
+                <div class="bg-red-400 bg-opacity-50 w-40 h-40 flex items-center justify-center rounded-full mx-auto relative">
+                    <div class="flex items-center justify-center">
+                        <img src="./images/icons/heart.png" alt="Staff" class="w-14 mb-4">
+                        <h1 class="font-medium mt-4 text-2xl absolute bottom-4">10K+</h1>
+                    </div>
+                </div>
+                <h1 class="font-medium my-4 text-lg">Recovered</h1>
+                <p class="text-sm text-center">Tens of thousands of people have recovered completely from coronavirus with the assistance of Chasdei Amram.</p>
+            </div>
+            <div class="text-center text-white col-span-12 sm:col-span-6 md:col-span-3 lg:col-span-2 p-4">
+                <div class="bg-red-400 bg-opacity-50 w-40 h-40 flex items-center justify-center rounded-full mx-auto relative">
+                    <div class="flex items-center justify-center">
+                        <img src="./images/icons/mil.png" alt="Staff" class="w-12 mb-4">
+                        <h1 class="font-medium mt-4 text-2xl absolute bottom-4">1M+</h1>
+                    </div>
+                </div>
+                <h1 class="font-medium my-4 text-lg">Shekels Spent</h1>
+                <p class="text-sm text-center">Chasdei Amram has purchased, and continues to purchase, equipment worth millions<span id="spentDots">...</span><span onclick="readMore('spent')" class="cursor-pointer font-bold" id="spentMoreBtn">Read More</span> <span id="spentMore">of shekels. That is in addition to the salaries of employees and various other expenses. The budgetary burden that Rabbi Markowitz has to carry disrupts the smooth operation of the lifesaving activities, and slows the pace at which Chasdei Amram can develop and expand, to be able to provide more expansive services to an increasing number of corona patients who need it.. <span onclick="readLess('spent')" class="cursor-pointer font-bold" id="spentLessBtn">Read Less</span></span></p>
+            </div>        
+        </div>
+    </section>
+    <section class="text-center lg:p-20 p-10 section" id="about">
+        <h1 class="uppercase font-medium sm:text-5xl text-2xl mb-10">About Us</h1>
+        <div>
+            <div>
+                <h2 class="uppercase text-2xl font-bold text-blue-900 tracking-wider">Establishment</h2>
+                <h5 class="my-3 font-medium text-2xl">From one patient, tens of thousands</h5>
+                <div class="text-sm mt-4">
+                    <p class="mb-2">Chasdei amram was establish about a month after corona came to Israel, on Pesach 5780. It began when the family of a patient reached out to Rabbi Markowitz, a medical askan. The patient had contracted coronavirus, and the family related that he was refusing to be taken to the hospital, and asked for help. Rabbi Markowitz quickly summoned a doctor and brought an oxygen concentrator to the patient's house, saving his life.</p>
+                    <p>One story led to another. Twenty patients cared for with dedication became thirty, forty, 200, 2000 and 10,000. Today, Chasdei Amram simultaneously cares for thousands of patients all over the country. These are people who prefer to be treated at home, under medical supervision, instead of being taken to hospitals, which are in a state of overload. While in the hospital, the patient is isolated - even though a patient on oxygen need someone to be at his side around the clock - at home,  every patient is cared for by the chasdei Amram medical staff and his family, all of whom are protected as necessary.</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="uppercase text-2xl font-bold text-blue-900 tracking-wider mt-10">ID Card</h2>
+        <h5 class="my-3 font-medium text-2xl">Chasdei Amram: Saving Tens of Thousands of Lives</h5>
+        <div class="text-sm mt-4">
+            <p class="mb-2">Chasdei Amram chessed organization was established amidst the chaos of the coronavirus pandemic, in an effort to help as many people as possible get through the virus, recover, and continue with their lives. The organization  is funded by donations, and since its inception, has been  in a breathless race to save lives. day in day out, round the clock, the organization's volunteers and employees have been focused on saving lives, plain and simple. </p>
+            <p>The organization was established by its director, Rabbi Yitzchak Markowitz, a resident of Mea SHearim. Since the outbreak of the pandemic he has not rested for a moment as he busily coordinates doctors and nurses, an office staff, a team that drives around transporting equipment and providing assistance; volunteers and field workers; and thousands of life-saving medical devices in fifteen branches in Eretz Yisrael as well as one in Monsey, N.Y.</p>
+            <p>To date, Chasdei Amram has saved the lives of tens of thousands (!) of people,  irrespective of their race, religion or gender.</p>
+        </div>
+    </section>
+    <section style="background-image: url('./images/background_3.png');" class="min-h-screen lg:p-20 p-10 bg-cover section" id="services">
+        <h1 class="sm:text-5xl text-2xl mb-20 block text-center text-white">What We Provide?</h1>
+        <div class="grid grid-cols-12 lg:space-x-10">
+            <div class="col-span-12 lg:col-span-4 pb-20 lg:pb-0">
+                <div class="rounded overflow-hidden group opacity-80 hover:opacity-100 transition-all duration-300 h-full">
+                    <div class="w-full relative 2xl:h-80 h-60 overflow-hidden">
+                        <img src="./images/service_care.png" alt="Care" class="h-full w-full absolute top-0 left-0 object-cover">
+                    </div>
+                    <div class="bg-blue-100 h-full text-center p-10">
+                        <h1 class="text-3xl uppercase font-medium mb-3 tracking-wide">Care</h1>
+                        <div class="text-sm">
+                            <p>Chasdei Amram works together with experienced doctors and nurses who make frequent home visits to patients and work to achieve as rapid a recovery as possible. The doctors treat the medical issues while nurses take blood tests. These tests are taken to professional laboratories, which work in cooperation with Chasdei Amram.</p>
+                        </div>
+                        <a href="#" class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 pb-20 lg:pb-0">
+                <div class="rounded overflow-hidden group opacity-80 hover:opacity-100 transition-all duration-300 h-full">
+                    <div class="w-full relative 2xl:h-80 h-60 overflow-hidden">
+                        <img src="./images/service_equipment.png" alt="Care" class="h-full w-full absolute top-0 left-0 object-cover">
+                    </div>
+                    <div class="bg-blue-100 h-full text-center p-10">
+                        <h1 class="text-3xl uppercase font-medium mb-3 tracking-wide">Equipment</h1>
+                        <div class="text-sm">
+                            <p>Advanced Medical Equipment: Within a few months, Chasdei Amram became a major provider of medical equipment. The organization went into debt and purchased (and continues to purchase) advanced medical equipment that helps save lives.<span id="equipmentDots">...</span><span onclick="readMore('equipment')" class="cursor-pointer font-bold" id="equipmentMoreBtn">Read More</span>
+                            </p>
+                            <span id="equipmentMore">
+                                <p>Medical equipment required by a corona patient and which the organization provides, includes: Oximeters (to measure saturation) | Blood pressure gauges | Advanced nebulizers | Oxygen concentrators to different levels | Oxygen tanks | Aicare breathing support machine | E.K.G. machines | Monitors | Advanced device to measure CO2 | </p>
+                                <p>These devices have saved the lives of tens of thousands of patients - and continue to do so round the clock.</p><span onclick="readLess('equipment')" class="cursor-pointer font-bold" id="equipmentLessBtn">Read Less</span>
+                            </span>
+                        </div>
+                        <a href="#" class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-4 pb-20 lg:pb-0">
+                <div class="rounded overflow-hidden group opacity-80 hover:opacity-100 transition-all duration-300 h-full">
+                    <div class="w-full relative 2xl:h-80 h-60 overflow-hidden">
+                        <img src="./images/service_assistance.png" alt="Care" class="h-full w-full absolute top-0 left-0 object-cover">
+                    </div>
+                    <div class="bg-blue-100 h-full text-center p-10">
+                        <h1 class="text-3xl uppercase font-medium mb-3 tracking-wide">Assistance</h1>
+                        <div class="text-sm">
+                            <p>Living lives by a Phone: A large part of Chasdei Amram's activities involve a telephone hotline for medical advice. Thousands of people call the hotline and receive medical guidance with regard to their course of treatment for coronavirus.<span id="assistanceDots">...</span><span onclick="readMore('assistance')" class="cursor-pointer font-bold" id="assistanceMoreBtn">Read More</span></p>
+                            <span id="assistanceMore">
+                                <p> The network has saved lives because they were readily available, with linger on the pulse, and knew at any given moment that the situation was, and what needed to be done is prevent deterioration.</p>
+                                <p>Active Teams: The office is staffed by teams throughout the day and night, all week. The staff answers all calls and works swiftly to get help and medicines to anyone who asks.</p>
+                                <p>There is also a fleet of Chasdei Amram vehicles that travels around the country, transporting all the medical equipment. Chasdei Amram visits the homes of the patients to measure saturation and to provide any other urgent assistance. Every member - whether a staffer or a volunteer - is equipped with a case of supplies and equipment worth more than NIS 3,000, which includes an oximeter and blood pressure gauge.</p><span onclick="readLess('assistance')" class="cursor-pointer font-bold" id="assistanceLessBtn">Read Less</span>
+                            </span>
+                        </div>
+                        <a href="#" class="bg-secondary text-white block w-32 p-2 rounded mx-auto mt-5 text-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="locations" class="section lg:p-20 p-10 text-center">
+        <h1 class="uppercase font-medium sm:text-5xl text-2xl mb-10">Locations</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nemo. Labore itaque soluta sed voluptas? Repellendus, vero autem eligendi tempora voluptatibus accusantium laudantium cum quod architecto in quasi veritatis distinctio!</p>
+    </section>
+    <section style="background-image: url('./images/background_4.png');" class="lg:p-20 p-10 bg-cover section" id="news">
+        <h1 class="sm:text-5xl text-2xl mb-20 block text-center text-white">NEWS &amp; UPDATES</h1>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide md:px-20">
+                    <div class="grid grid-cols-12">
+                        <div class="md:col-span-3 col-span-12">
+                            <img src="./images/featured.png" alt="Featured" class="w-full">
+                        </div>
+                        <div class="md:col-span-9 col-span-12 md:px-20">
+                            <div class="border-2 border-white md:p-10 p-3 h-full text-white">
+                                <h1 class="text-3xl">News 1</h1>
+                                <p class="my-3">September 3, 2021</p>
+                                <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo voluptatibus ducimus tempora natus iure voluptatem harum doloremque quibusdam quos expedita, eaque odio eum sint ipsum perspiciatis officia quae id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio quas eius dolorum veniam, iusto ea quia natus recusandae provident sequi. Nobis vero optio numquam ab ut sed, dignissimos tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iste! Consequatur dolore, adipisci eos omnis, ab vel est quisquam saepe dignissimos fugit, quidem minus magnam voluptas quia voluptate laborum reprehenderit?</p>
+                                <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nemo voluptatibus ducimus tempora natus iure voluptatem harum doloremque quibusdam quos expedita, eaque odio eum sint ipsum perspiciatis officia quae id.</p>
+                                <a href="#" class="text-sm p-2 bg-blue-700 mt-5 block w-28 text-center rounded hover:bg-blue-800">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section id="testimonials" class="section lg:p-20 p-10 text-center bg-gray-100">
+        <h1 class="uppercase font-medium sm:text-5xl text-2xl mb-10">Testimonials</h1>
+        <div class="p-1 bg-gradient-to-r from-red-700 to-blue-500 mb-10">
+            <div class="md:flex block text-left items-center bg-gray-100 sm:p-10 p-3">
+                <img src="./images/testimonial_1.png" alt="Testimonial" class="w-40 h-40 mx-auto block">
+                <div class="md:p-10 p-4">
+                    <p>This organization already helped thousands of people , mamash thousands of people from all areas in Eretz Hakodesh who owe their lives to this org. Peshitoy Kemashmoy, Bli Shum Guzma!</p>
+                    <p class="mt-2 font-bold">- Reb Meilech Biderman</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-1 bg-gradient-to-r from-red-700 to-blue-500">
+            <div class="md:flex block text-left items-center bg-gray-100 sm:p-10 p-3">
+                <img src="./images/testimonial_2.png" alt="Testimonial" class="w-40 h-40 mx-auto block">
+                <div class="md:p-10 p-4">
+                    <p>Whoever helps Reb Yitzchak Markovitch (Founder of Chasdei Amrom) praised is those who help him with large amounts, for sure those that help ,  will be blessed with Kal Mili Demeitav. and will be saved ‏מכל פגע מכל נגעצ ומחלה מכל צרה וצוקה And they and their families will be healthy ‏בגוף ובנפש and have Nachas from their children and Parnasah Birevach and ‏הצלחה בכל העניינים</p>
+                    <p class="mt-2 font-bold">- Reb Yaakov Meir Schechter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="donate" class="section lg:p-20 p-10 text-center">
+        <h1 class="uppercase font-medium sm:text-5xl text-2xl mb-10">Donation Details</h1>
+        <div class="p-1 bg-gradient-to-r from-red-700 to-blue-500">
+            <div class="bg-white p-5 sm:p-10">
+                <h5 class="uppercase text-red-700 font-bold text-lg">donation by bank transfer</h5>
+                <div class="flex justify-center">
+                    <div class="text-blue-800 text-xs sm:text-sm">
+                        <div class="flex font-bold mt-5">
+                            <div class="sm:w-40 text-right">IBAN</div>
+                            <div class="mx-4">-</div>
+                            <div>IL69-0204-0300-0000-0162-526</div>
+                        </div>
+                        <div class="flex  font-bold mt-5">
+                            <div class="sm:w-40 text-right">Account Number</div>
+                            <div class="mx-4">-</div>
+                            <div>403-162526</div>
+                        </div>
+                        <div class="flex  font-bold mt-5">
+                            <div class="sm:w-40 text-right">Account Name</div>
+                            <div class="mx-4">-</div>
+                            <div>SHASDEY AMRAM</div>
+                        </div>
+                        <div class="flex  font-bold mt-5">
+                            <div class="sm:w-40 text-right">Swift Code</div>
+                            <div class="mx-4">-</div>
+                            <div>MIZBILITXXX</div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="uppercase text-red-700 font-bold text-lg mt-5">For telephone donation</h5>
+                <div class="flex justify-center">
+                    <div class="text-blue-800 text-xs sm:text-sm">
+                        <div class="flex font-bold mt-5">
+                            <div class="sm:w-46 text-right">Telephone Number</div>
+                            <div class="mx-4">-</div>
+                            <div class="sm:w-64 text-left">0799693966</div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="text-red-700 font-bold text-lg mt-5 mb-5">Contact us for more details and we will get back to you</h5>
+                <div class="sm:w-3/5 w-full block mx-auto">
+                    <a href="#" class="bg-red-800 py-2 w-full text-white rounded-full px-10 text-sm mb-2 block hover:bg-red-900">TO MAKE A SECURE CREDIT CARD DONATION, CLICK HERE</a>
+                    <a href="#" class="bg-blue-900 py-2 w-full text-white rounded-full px-10 text-sm mb-2 block hover:bg-blue-700">FOR U.S. TAX RECEIPTS ONLY</a>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=2T4C5WARWTUAS" target="_blank" class="bg-blue-800 py-2 w-full text-white rounded-full px-10 text-sm mb-2 block hover:bg-blue-900">FOR PAYPAL DONATION, CLICK HERE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="flex flex-wrap">
+            <div class="md:w-1/2 w-full">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d153458.4997094288!2d35.23415628072711!3d31.798136781192817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150329dc5f925b77%3A0xd87791c380cddbf7!2sBarukh%20Rapaport%20St%208%2C%20Jerusalem%2C%20Israel!5e0!3m2!1sen!2sph!4v1630815772841!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="md:w-1/2 w-full p-10 bg-gradient-to-r from-red-700 to-blue-700">
+                <h1 class="sm:text-5xl text-2xl sm:mb-20 mb-10 block text-center text-white mt-4">Get in touch with us</h1>
+                <div class="flex justify-around space-x-4">
+                    <div class="sm:flex block sm:space-x-3 items-center">
+                        <img src="./images/icons/phone.png" alt="Phone">
+                        <p class="font-medium md:text-lg text-xs text-white tracking-wider mt-3 sm:mt-0">0733678781</p>
+                    </div>
+                    <div class="sm:flex block  sm:space-x-3 items-center">
+                        <img src="./images/icons/plane.png" alt="Plane">
+                        <p class="font-medium md:text-lg text-xs text-white tracking-wider mt-3 sm:mt-0">t@chasdeyamram.org</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 mt-10">
+                    <div class="sm:col-span-6 col-span-12 p-2">
+                        <input type="text" placeholder="First Name" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                    </div>
+                    <div class="sm:col-span-6 col-span-12 p-2">
+                        <input type="text" placeholder="Last Name" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                    </div>
+                    <div class="sm:col-span-6 col-span-12 p-2">
+                        <input type="email" placeholder="Email" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                    </div>
+                    <div class="sm:col-span-6 col-span-12 p-2">
+                        <input type="text" placeholder="Phone" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                    </div>
+                    <div class="col-span-12 p-2">
+                        <input type="text" placeholder="Subject" class="bg-transparent p-2 border-2 border-white w-full block outline-none">
+                    </div>
+                    <div class="col-span-12 p-2">
+                        <textarea class="bg-transparent p-2 border-2 border-white w-full block outline-none" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-span-12 p-2">
+                        <button class="p-3 w-60 bg-green-500 text-white mx-auto block rounded hover:bg-green-600 text-lg">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-primary text-center">
+        <p class="text-xs text-white py-3">Copyright © 2021 Chasdey Yamram. All rights reserved.</p>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const readMore = id =>{
+            const dots = document.querySelector(`#${id}Dots`);
+            const more = document.querySelector(`#${id}More`);
+            const moreBtn = document.querySelector(`#${id}MoreBtn`);
+            const lessBtn = document.querySelector(`#${id}LessBtn`);
+            dots.style.display = 'none';
+            more.style.display = 'inline';
+            moreBtn.style.display = 'none';
+            lessBtn.style.display = 'inline';
+        }
+        const readLess = id =>{
+            const dots = document.querySelector(`#${id}Dots`);
+            const more = document.querySelector(`#${id}More`);
+            const btn = document.querySelector(`#${id}Btn`);
+            const moreBtn = document.querySelector(`#${id}MoreBtn`);
+            const lessBtn = document.querySelector(`#${id}LessBtn`);
+            dots.style.display = 'inline';
+            more.style.display = 'none';
+            moreBtn.style.display = 'inline';
+            lessBtn.style.display = 'none';
+        }
+    </script>
+    <script>
+        const menuActive = false;
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const toggleMenu = () =>{
+            this.menuActive = !this.menuActive;
+            const menu = document.querySelector('#menu');
+            if(this.menuActive){
+                menu.classList.remove('-translate-x-full');
+                menu.classList.add('translate-x-0');
+            }
+            else{
+                menu.classList.remove('translate-x-0');
+                menu.classList.add('-translate-x-full');
+            }
+        }
+    </script>
+</body>
+</html>
