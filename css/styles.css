@@ -58,6 +58,19 @@ body{
     background-color: #ab0500;
 }
 
+.bg-tertiary{
+    background-color: #056bca;
+}
+
+.location:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #056bca;
+}
+
+.icon:hover{
+    box-shadow: #fff 0px 0px 15px;
+}
+
 .swiper-button-prev {
     background-image: url(../images/icons/prev_arrow.png);
     background-repeat: no-repeat;
